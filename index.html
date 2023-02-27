@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxa Metabólica Basal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Cálculo de taxa metabólica Basal</h1>           
+    </header>
+    <main>
+        <section id="main-form">
+            <section id="sexo">
+                <h4>Sexo: </h4>
+                <div class="sexo-form">
+                    <div class="fem">
+                        <input type="radio" name="sexo" id="fem" value="fem">
+                        <label for="sexo">Feminino: </label>
+                    </div>
+                    <div class="masc">
+                        <input type="radio" name="sexo" id="masc" value="masc">
+                        <label for="sexo">Masculino: </label>
+                    </div>
+                </div>
+            </section>
+            <section id="dados">
+                <label for="peso"><h4>Peso: </h4></label>
+                <input type="number" name="peso" id="peso" placeholder="peso em kilos">
+                <label for="altura"><h4>Altura: </h4> </label>
+                <input type="number" name="altura" id="altura" placeholder="altura em cm">
+                <label for=""><h4>Idade: </h4></label>
+                <input type="text" name="idade" id="idade">
+            </section>
+            <section id="atividade">
+                <h4>Nível de atividade:</h4>
+                <section class="atividade-form" id="atividade-form">
+                    <div class="sedentario">
+                        <input type="radio" name="ativisdade" id="sedentario" value="sedentario">
+                        <label for="atividade">Sedentário</label>
+                    </div>
+                    <div class="leve">
+                        <input type="radio" name="atividade" id="leve" value="sedentario">
+                        <label for="atividade">leve</label>
+                    </div>
+                    <div class="moderado">
+                        <input type="radio" name="atividade" id="moderado" value="sedentario">
+                        <label for="atividade">moderado</label>
+                    </div>
+                    <div class="ativo">
+                        <input type="radio" name="atividade" id="ativo" value="sedentario">
+                        <label for="atividade">ativo</label>
+                    </div>
+                    <input type="submit" value="submit" id="submit">
+                </section>
+            </section>
+
+
+        </section>
+        <section id="main-result">
+
+        </section>
+    </main>
+    <script type="module" src="./main.js">
+        
+    </script>
+</body>
+</html>
